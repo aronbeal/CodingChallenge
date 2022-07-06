@@ -52,6 +52,7 @@ docker-compose up -d db
 ```
 ​
 To verify the container is up run `docker ps`:
+
 ```bash
 ➜ docker ps
 CONTAINER ID        IMAGE                 COMMAND                  CREATED             STATUS              PORTS                    NAMES
@@ -61,6 +62,7 @@ d22806639140        mdillon/postgis:9.4   "docker-entrypoint.s…"   3 seconds a
 You should now be able to log into it and make queries against it on
 `localhost:5432`. See `docker-compose.yml` for db name, user, and password
 information.
+
 ```bash
 ➜ psql -h localhost  -p 5432 -U gps_collector -d gps_collector
 psql (12.2, server 9.4.21)
